@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carolyn Tsao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-name">Carolyn Tsao</a>
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#teaching">Teaching</a>
+        <a href="cv.pdf">CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Header / Bio -->
+    <div class="header">
+      <img src="photo.jpg" alt="Carolyn Tsao" class="headshot">
+      <div class="bio">
+        <h1>Carolyn Tsao</h1>
+        <div class="affiliations">
+          Postdoctoral Researcher, Microsoft Research<br>
+          Assistant Professor, Department of Economics, The Ohio State University (starting Fall 2026)
+        </div>
+        <p class="about">
+          I am a labor economist. I study how non-wage amenities affect workers' productivity and job choice, with a focus on education and teacher labor markets.<br><br>I received my PhD in Economics from Princeton University in 2025.
+        </p>
+        <div class="links">
+          <a href="cv.pdf">CV</a>
+          <!-- <a href="#">Google Scholar</a> -->
+          <!-- <a href="#">GitHub</a> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Research -->
+    <section id="research">
+      <h2>Research</h2>
+
+      <div class="paper">
+        <div class="paper-title">It's Not (Just) About the Money: Pay and the Value of Working Conditions in Teaching</div>
+        <div class="paper-award">Awards: Best Paper Award, CESifo Economics of Education Conference 2024</div>
+        <div class="paper-presented">Presented at: <!-- Add conferences here --></div>
+        <div class="paper-links">
+          <a href="#">PDF</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract">
+          Using a regression kink design and event studies on Kentucky administrative data, I find that teaching offers an approximately $20,000 annual premium over teachers' outside options. Experienced teachers earn a 16% rent over their alternatives, while inexperienced teachers earn no rent.
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">The Effects of Prohibiting Marriage Bars: The Case of U.S. Teachers</div>
+        <div class="paper-authors">with Amy Kim</div>
+        <div class="paper-journal">Conditionally Accepted, <em>The Journal of Economic History</em></div>
+        <div class="paper-award">Awards: 2024 IPUMS USA Research Award</div>
+        <div class="paper-presented">Presented at: <!-- Add conferences here --></div>
+        <div class="paper-links">
+          <a href="#">PDF</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract">
+          We study the effects of legislative prohibitions on marriage bars for teachers in the 1930s United States, examining how these policies affected married women's participation in the teaching workforce.
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">Managers in Public Schools</div>
+        <div class="paper-presented">Presented at: <!-- Add conferences here --></div>
+        <div class="paper-links">
+          <a href="#">PDF</a>
+          <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract">
+          I examine principal effectiveness using a two-way fixed effects framework. Principal effectiveness explains less outcome variance than teacher effectiveness, but more effective principals are associated with improved student and teacher outcomes.
+        </div>
+      </div>
+
+      <div class="paper">
+        <div class="paper-title">Feedback Style and Worker Productivity</div>
+        <div class="paper-authors">with Calvin Jahnke and Gabor Nyeki</div>
+        <div class="paper-presented">Presented at: <!-- Add conferences here --></div>
+        <div class="paper-links">
+          <button class="abstract-toggle" onclick="toggleAbstract(this)">Abstract</button>
+        </div>
+        <div class="abstract">
+          We analyze the relationship between manager communication tone and engineer productivity using data from the Linux kernel and NLP techniques. Preliminary findings suggest that toxic feedback negatively impacts task completion rates.
+        </div>
+      </div>
+    </section>
+
+    <!-- Teaching -->
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <p style="color: #888; font-style: italic;">Coming soon.</p>
+      <!-- Example format:
+      <div class="teaching-item">
+        <strong>Course Name</strong> — Semester Year, University
+      </div>
+      -->
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      &copy; 2026 Carolyn Tsao
+    </div>
+  </footer>
+
+  <script>
+    function toggleAbstract(btn) {
+      const abstract = btn.closest('.paper-links').nextElementSibling;
+      abstract.classList.toggle('open');
+      btn.textContent = abstract.classList.contains('open') ? 'Hide Abstract' : 'Abstract';
+    }
+  </script>
+
+</body>
+</html>
