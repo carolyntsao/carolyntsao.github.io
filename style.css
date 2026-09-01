@@ -103,9 +103,18 @@ nav {
 }
 
 .bio .contact {
-  margin-top: 0.8rem;
-  font-size: 0.9rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+  color: #000;
+}
+
+.bio .contact a {
   color: #1a3353;
+}
+
+.bio .contact a:hover {
+  color: #1a5276;
 }
 
 .bio .links {
@@ -240,6 +249,109 @@ section h2 {
 .teaching-item {
   margin-bottom: 0.6rem;
   font-size: 0.98rem;
+}
+
+.teaching-item .course-name {
+  color: #1a3353;
+}
+
+.teaching-note {
+  margin-top: 1.8rem;
+}
+
+.teaching-note-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.teaching-note ul {
+  margin: 0 0 0 1.2rem;
+  font-size: 0.9rem;
+}
+
+.teaching-note li {
+  margin-bottom: 0.25rem;
+  color: #666;
+}
+
+/* ── Standalone Text Pages ────────────────────── */
+.page {
+  padding: 2.4rem 0 1.2rem;
+  max-width: 680px;
+}
+
+.page h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #3d3d3d;
+  margin-bottom: 1.2rem;
+}
+
+.page h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #3d3d3d;
+  margin-top: 2.2rem;
+  margin-bottom: 0.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.page h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a3353;
+  margin-top: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.page p {
+  font-size: 0.98rem;
+  margin-bottom: 0.9rem;
+}
+
+.page ul,
+.page ol {
+  margin: 0 0 0.9rem 1.3rem;
+  font-size: 0.98rem;
+}
+
+.page li {
+  margin-bottom: 0.45rem;
+}
+
+.page li > ul,
+.page li > ol {
+  margin-top: 0.45rem;
+  margin-bottom: 0.2rem;
+}
+
+.page blockquote {
+  margin: 1.2rem 0;
+  padding: 0.9rem 1.2rem;
+  background: #f8f8f8;
+  border-left: 3px solid #ddd;
+  font-size: 0.94rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.page code {
+  font-family: 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  background: #f4f4f4;
+  border: 1px solid #e4e4e4;
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  overflow-wrap: break-word;
+}
+
+.page .page-back {
+  margin-top: 2.4rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid #e8e8e8;
+  font-size: 0.9rem;
 }
 
 /* ── Footer ───────────────────────────────────── */
